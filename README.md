@@ -11,3 +11,9 @@ For exemple %1$c : call the argument 1 (the second) in printf to use it in char,
 
 Using fflush to clear the buffer of printf to print correctly
 For exemple : ./Colleen > tmp_Colleen without flush will be empty due to the buffer problem
+
+```asm
+mov rax, 60 ; 60 is exit
+mov rdi, 1 ; 1 for the exit value
+syscall
+```
