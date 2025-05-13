@@ -13,8 +13,8 @@ section .text
 	main:
 		mov rax, 2
 		lea rdi, [rel fname]
-		mov rsi, 577
-		mov rdx, 0644
+		mov rsi, 577 ; flags of open (creat+wronly+trunc)
+		mov rdx, 0644 ; permissions of open
 		syscall
 		cmp rax, 0
 		jle _error
@@ -23,3 +23,5 @@ section .text
 		mov rax, 60
 		xor rdi, rdi
 		syscall
+%end_macro
+MACRO FNAME, STR
