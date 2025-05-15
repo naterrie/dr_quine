@@ -39,7 +39,7 @@ $(DIR_OBJS):
 	mkdir -p $@
 
 run: all
-	./$(NAME) > Grace_kid.s ; diff Grace_kid.s Grace.s || true
+	./$(NAME) ; diff Grace_kid.s Grace.s || true
 
 clean:
 	echo "$(PURPLE)🧹Removing $(NAME).o files !"
