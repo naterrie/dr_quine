@@ -1,9 +1,13 @@
-// Comment Out
-function consol(code) {
-	console.log(`// Comment Out`+`\n`+consol.toString()+`\n`+code+`\n`+"quine();");
-	//Comment in
+/*
+	Comment Out
+*/
+function print(code) {
+	console.log(`/*\n\tComment Out\n*/`+`\n`+print.toString()+`\n`+code+`\n`+"quine();");
+	/*
+		Comment in
+	*/
 }
 function quine() {
-	consol(quine.toString());
+	print(quine.toString());
 }
 quine();
