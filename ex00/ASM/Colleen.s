@@ -24,13 +24,13 @@ section .text
 	main:
 		call ft_printf
 		test eax, -1
-		jne _error
+		jne .error
 		mov eax, 0
 		mov rax, 60
 		mov rdi, rdi
 		syscall
 
-	_error:
+	.error:
 		mov eax, 1
 		mov rax, 60
 		mov rdi, 1
