@@ -4,7 +4,7 @@
 	*/
 	const fs = require('fs')
 	const name = "Grace_kid.js"
-	const code = `(${grace.toString()})()`
+	const code = `(${grace.toString()})()\n`
 	fs.writeFile(name, code, function(error) {
 		if (error) {
 			return console.error(error)

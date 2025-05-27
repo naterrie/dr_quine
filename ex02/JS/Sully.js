@@ -1,7 +1,7 @@
 (function main() {
 	const fs = require("fs");
 	const { exec } = require("child_process");
-	const code = `(${main.toString()})()`;
+	const code = `(${main.toString()})()\n`;
 	let i = 5;
 
 	if (i <= 0)
